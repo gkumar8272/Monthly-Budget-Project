@@ -1,0 +1,6 @@
+channel_id,channel_name,channel_type,attribution_model,target_cpa,is_active
+1,Search,Paid,Last-Touch,55.0,1
+2,Social,Paid,Last-Touch,75.0,1
+3,Referral,Partner,Last-Touch,30.0,1
+4,Email,Organic,Last-Touch,20.0,1
+5,Organic,Organic,Last-Touch,15.0,1

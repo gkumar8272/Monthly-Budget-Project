@@ -1,0 +1,5 @@
+tier_id,tier_name,monthly_price,gross_margin_pct,target_ltv_cac,annual_churn_rate
+1,Basic,29.0,0.7,3.0,0.24
+2,Pro,79.0,0.75,3.5,0.18
+3,SMB,199.0,0.8,4.0,0.12
+4,Enterprise,599.0,0.85,5.0,0.06
