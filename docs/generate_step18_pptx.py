@@ -212,7 +212,7 @@ def build_presentation():
 
     add_textbox(slide1, 0.3, 6.65, 12.5, 0.3,
                 text="GitHub: https://github.com/gkumar8272/Monthly-Budget-Project  |  "
-                     "Live App: https://2500320140055-cac-analysis.streamlit.app",
+                     "Live App: https://monthly-budget-project-hgcyxbnvwnvyx8g4ngpnax.streamlit.app/",
                 bold=False, size=9.5, colour=WHITE, align=PP_ALIGN.CENTER)
 
     slide1.notes_slide.notes_text_frame.text = (
@@ -706,7 +706,7 @@ def build_presentation():
     # App URL box
     add_rect(slide11, 1.5, 1.85, 10, 0.75, SKY)
     add_textbox(slide11, 1.6, 1.9, 9.8, 0.65,
-                text="https://2500320140055-cac-analysis.streamlit.app",
+                text="https://monthly-budget-project-hgcyxbnvwnvyx8g4ngpnax.streamlit.app/",
                 bold=True, size=16, colour=WHITE, align=PP_ALIGN.CENTER)
 
     # GitHub URL box
@@ -748,8 +748,19 @@ def build_presentation():
     )
 
     output_path = r"c:\Users\asus\Downloads\MERN-Expense-Tracker-main\docs\2500320140055_Presentation.pptx"
-    prs.save(output_path)
-    print(f"Presentation saved to {output_path}")
+    alt_path = r"c:\Users\asus\Downloads\MERN-Expense-Tracker-main\docs\18_Presentation.pptx"
+    try:
+        prs.save(output_path)
+        print(f"Presentation saved to {output_path}")
+    except PermissionError:
+        output_path = r"c:\Users\asus\Downloads\MERN-Expense-Tracker-main\docs\2500320140055_Presentation_Updated.pptx"
+        prs.save(output_path)
+        print(f"File was open in PowerPoint. Saved updated deck to {output_path}")
+    try:
+        prs.save(alt_path)
+        print(f"Presentation mirrored to {alt_path}")
+    except Exception:
+        pass
 
 if __name__ == "__main__":
     build_presentation()

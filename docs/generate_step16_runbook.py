@@ -136,7 +136,7 @@ def build_docx():
         ["Institution & Department", "ABES Engineering College, Ghaziabad | Department of Computer Applications"],
         ["Project Mentor", "Prof. Alpna Lodhi, Assistant Professor (Project Guide)"],
         ["Document Identifier", "DOC-CAC-ST16-DEPLOY-RUNBOOK-v1.0"],
-        ["Target Production URL", "https://2500320140055-cac-analysis.streamlit.app"],
+        ["Target Production URL", "https://monthly-budget-project-hgcyxbnvwnvyx8g4ngpnax.streamlit.app/"],
         ["Release Date & Status", "November 18, 2026 | Verified for Production Cloud Deployment"]
     ]
     t_meta = doc.add_table(rows=len(meta_data)+1, cols=2)
@@ -212,7 +212,7 @@ def build_docx():
         ["Repository", "Your GitHub Username / 2500320140055-cac-analysis (or current repo name)"],
         ["Branch", "main"],
         ["Main file path", "app.py"],
-        ["App URL (Custom)", "2500320140055-cac-analysis.streamlit.app"],
+        ["App URL (Live)", "https://monthly-budget-project-hgcyxbnvwnvyx8g4ngpnax.streamlit.app/"],
         ["Python Version", "3.10 or 3.11 (matches local test execution runtime)"],
         ["Advanced Settings", "No environment secrets required (fully standalone SQLite architecture)"]
     ]

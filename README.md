@@ -4,7 +4,7 @@
 > *Developed for Major Capstone Project — MCA 2nd Year (Data Analytics), ABES Engineering College, Ghaziabad.*
 
 [![Python 3.10+](https://img.shields.io/badge/python-3.10%20%7C%203.12-blue.svg)](https://www.python.org/)
-[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://2500320140055-cac-analysis.streamlit.app)
+[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://monthly-budget-project-hgcyxbnvwnvyx8g4ngpnax.streamlit.app/)
 [![Tests Passing](https://img.shields.io/badge/pytest-14%2F14%20passed-brightgreen.svg)](https://github.com/gkumar8272/Monthly-Budget-Project)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
@@ -16,7 +16,7 @@
 - **Degree:** Master of Computer Applications (MCA) — Data Analytics (2nd Year)
 - **Institution:** ABES Engineering College, Ghaziabad | Department of Computer Applications
 - **Faculty Mentor:** Prof. Alpna Lodhi (Assistant Professor)
-- **Live Cloud Dashboard:** [https://2500320140055-cac-analysis.streamlit.app](https://2500320140055-cac-analysis.streamlit.app)
+- **Live Cloud Dashboard:** [https://monthly-budget-project-hgcyxbnvwnvyx8g4ngpnax.streamlit.app/](https://monthly-budget-project-hgcyxbnvwnvyx8g4ngpnax.streamlit.app/)
 - **GitHub Repository:** [https://github.com/gkumar8272/Monthly-Budget-Project](https://github.com/gkumar8272/Monthly-Budget-Project)
 
 ---

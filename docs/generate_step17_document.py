@@ -149,7 +149,7 @@ def generate_project_document():
         ["Faculty Project Mentor", "Prof. Alpna Lodhi, Assistant Professor"],
         ["Document ID & Revision", "ABES-MCA-DA-2026-CAC-001 | Version 1.0 (Final Approved Baseline)"],
         ["GitHub Repository URL", "https://github.com/gkumar8272/Monthly-Budget-Project"],
-        ["Live Production Streamlit URL", "https://2500320140055-cac-analysis.streamlit.app"],
+        ["Live Production Streamlit URL", "https://monthly-budget-project-hgcyxbnvwnvyx8g4ngpnax.streamlit.app/"],
         ["Project Delivery Date", "November 18, 2026"]
     ]
     t_cover = doc.add_table(rows=len(cover_data)+1, cols=2)
