@@ -128,10 +128,12 @@ def generate_bi_docx():
 
     # Document Metadata
     meta_data = [
+        ["Project ID", "P083"],
         ["Project Title", "Customer Acquisition Cost (CAC) & Marketing Unit Economics Analysis"],
         ["Candidate Name / Roll No", "Gourav Kumar | Roll No: 2500320140055"],
+        ["Batch ID", "ABES_OND26_MCA 2nd Year_Data Analytics_Batch 01"],
         ["Program & Institution", "MCA 2nd Year (Data Analytics) — ABES Engineering College, Ghaziabad"],
-        ["Faculty Mentor", "Prof. Alpna Lodhi, Assistant Professor"],
+        ["Faculty Mentor", "Mr. Dinesh Sereno, Assistant Professor"],
         ["Primary Dataset", "data/cac_eda_dataset.csv (558 rows, 18 columns)"],
         ["Target Platforms", "Tableau Desktop / Tableau Public & Microsoft Power BI Desktop"]
     ]

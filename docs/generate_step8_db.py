@@ -41,10 +41,12 @@ def generate_db_design_and_update_rtm():
     ws_ov["A2"].font = subtitle_font
     
     meta_info = [
+        ("Project ID", "P083"),
         ("Project Name", "Customer Acquisition Cost (CAC) Analysis"),
         ("Student Author", "Gourav Kumar (Roll: 2500320140055)"),
+        ("Batch ID", "ABES_OND26_MCA 2nd Year_Data Analytics_Batch 01"),
         ("Program / College", "MCA 2nd Year (Data Analytics), ABES Engineering College"),
-        ("Faculty Mentor", "Prof. Alpna Lodhi"),
+        ("Faculty Mentor", "Mr. Dinesh Sereno"),
         ("RDBMS Platform", "SQLite 3.x (Embedded in data/app.db)"),
         ("Schema Architecture", "Normalized 3NF Relational Foundation with De-normalized Analytical View (34 Columns)"),
         ("Total Relational Tables", "4 Entities (2 Master / Dimension Tables + 2 Transactional Fact Tables)"),

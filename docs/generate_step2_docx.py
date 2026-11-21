@@ -71,17 +71,20 @@ def build_hmw_doc():
 
     doc.add_paragraph().paragraph_format.space_after = Pt(6)
 
-    # Meta Table
-    meta_table = doc.add_table(rows=5, cols=2)
-    meta_table.alignment = WD_TABLE_ALIGNMENT.CENTER
-    set_table_borders(meta_table, "CBD5E1")
     meta = [
+        ("Project ID", "P083"),
         ("Candidate Name", "Gourav Kumar (Roll: 2500320140055)"),
+        ("Batch ID", "ABES_OND26_MCA 2nd Year_Data Analytics_Batch 01"),
         ("Academic Program", "MCA 2nd Year (Data Analytics), ABES Engineering College"),
-        ("Faculty Mentor", "Prof. Alpna Lodhi"),
-        ("Document Identifier", "DOC-STEP-02 | HMW Statements & Pain Point Mapping"),
+        ("Faculty Mentor", "Mr. Dinesh Sereno"),
+        ("Document Identifier", "P083-DOC-STEP-02 | HMW Statements & Pain Point Mapping"),
         ("System Baseline", "Linked directly to Step 1 OQs (OQ-01 through OQ-09) and SHs (SH-01 through SH-05)")
     ]
+
+    # Meta Table
+    meta_table = doc.add_table(rows=len(meta), cols=2)
+    meta_table.alignment = WD_TABLE_ALIGNMENT.CENTER
+    set_table_borders(meta_table, "CBD5E1")
     for i, (k, v) in enumerate(meta):
         row = meta_table.rows[i]
         c0, c1 = row.cells[0], row.cells[1]
@@ -143,7 +146,7 @@ def build_hmw_doc():
          "1. Extended capital payback periods (>12 months) locking up organizational working capital.\n2. Customer cohorts exhibiting high early churn despite high initial acquisition spend (LTV:CAC < 3:1).\n3. Lack of unified analytical reconciliation between marketing reports and ledger entries."),
         ("SH-04: Data Analyst (Gourav Kumar)", "System Developer & QA", 
          "1. Disparate marketing logs with inconsistent attribution touchpoints across campaigns.\n2. Difficulty demonstrating statistical significance of cost variances to non-technical leaders.\n3. Need for automated testing to ensure math logic parity between database and UI layers."),
-        ("SH-05: Academic Mentor (Prof. Alpna Lodhi)", "Faculty Evaluator", 
+        ("SH-05: Academic Mentor (Mr. Dinesh Sereno)", "Faculty Evaluator", 
          "1. Academic analytics projects often stop at descriptive charts without formal hypothesis testing.\n2. Incomplete traceability between business operational questions and visual analytics deliverables.\n3. Lack of reproducible, automated unit test verification.")
     ]
 
@@ -308,8 +311,13 @@ def build_hmw_doc():
                 r.font.color.rgb = RGBColor(0x16, 0x65, 0x34)
 
     target_path = os.path.abspath("docs/02_HMW_Statements.docx")
-    doc.save(target_path)
-    print(f"Generated: {target_path}")
+    try:
+        doc.save(target_path)
+        print(f"Generated: {target_path}")
+    except PermissionError:
+        fallback = target_path.replace(".docx", "_Updated.docx")
+        doc.save(fallback)
+        print(f"File was open in Word. Saved to: {fallback}")
 
 if __name__ == "__main__":
     build_hmw_doc()

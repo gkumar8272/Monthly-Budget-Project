@@ -73,19 +73,21 @@ def create_document():
 
     doc.add_paragraph().paragraph_format.space_after = Pt(8)
 
+    metadata = [
+        ("Project ID", "P083"),
+        ("Candidate Name", "Gourav Kumar"),
+        ("University Roll Number", "2500320140055"),
+        ("Batch ID", "ABES_OND26_MCA 2nd Year_Data Analytics_Batch 01"),
+        ("Academic Program & Year", "MCA 2nd Year (Data Analytics), ABES Engineering College"),
+        ("Faculty Mentor / Supervisor", "Mr. Dinesh Sereno"),
+        ("Domain & Technology Stack", "Data Analytics | Python, Streamlit, Plotly, SQLite, Pytest")
+    ]
+
     # Metadata Table
-    meta_table = doc.add_table(rows=5, cols=2)
+    meta_table = doc.add_table(rows=len(metadata), cols=2)
     meta_table.alignment = WD_TABLE_ALIGNMENT.CENTER
     meta_table.autofit = False
     set_table_borders(meta_table, "CBD5E1")
-
-    metadata = [
-        ("Candidate Name", "Gourav Kumar"),
-        ("University Roll Number", "2500320140055"),
-        ("Academic Program & Year", "MCA 2nd Year (Data Analytics), ABES Engineering College"),
-        ("Faculty Mentor / Supervisor", "Prof. Alpna Lodhi"),
-        ("Domain & Technology Stack", "Data Analytics | Python, Streamlit, Plotly, SQLite, Pytest")
-    ]
 
     for i, (k, v) in enumerate(metadata):
         row = meta_table.rows[i]
@@ -487,10 +489,14 @@ def create_document():
     # Save to disk
     target_path_1 = os.path.abspath("docs/01_Project_Understanding.docx")
     target_path_2 = os.path.abspath("docs/01_Customer_Acquisition_Cost_Project_Understanding.docx")
-    doc.save(target_path_1)
-    doc.save(target_path_2)
-    print(f"Generated: {target_path_1}")
-    print(f"Generated: {target_path_2}")
+    for tp in [target_path_1, target_path_2]:
+        try:
+            doc.save(tp)
+            print(f"Generated: {tp}")
+        except PermissionError:
+            fallback = tp.replace(".docx", "_Updated.docx")
+            doc.save(fallback)
+            print(f"File was open in Word. Saved to: {fallback}")
 
 if __name__ == "__main__":
     create_document()

@@ -24,9 +24,10 @@ def code(src):
 md("""
 # 📊 EDA Masterclass Notebook — Customer Acquisition Cost (CAC) Analysis
 
+**Project ID:** P083 | **Batch ID:** ABES_OND26_MCA 2nd Year_Data Analytics_Batch 01  
 **Student:** Gourav Kumar | **Roll No:** 2500320140055  
 **Program:** MCA 2nd Year — Data Analytics | **Institution:** ABES Engineering College, Ghaziabad  
-**Faculty Mentor:** Prof. Alpna Lodhi  
+**Faculty Mentor:** Mr. Dinesh Sereno  
 
 ---
 
@@ -1239,7 +1240,7 @@ md("""
 
 ---
 
-*Notebook by Gourav Kumar | Roll: 2500320140055 | ABES Engineering College | November 2026*
+*Notebook by Gourav Kumar | Roll: 2500320140055 | Project ID: P083 | Batch: ABES_OND26_MCA 2nd Year_Data Analytics_Batch 01 | Mentor: Mr. Dinesh Sereno | ABES Engineering College*
 """)
 
 # ── Save notebook ──────────────────────────────────────────────────────────

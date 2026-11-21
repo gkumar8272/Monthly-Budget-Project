@@ -41,7 +41,7 @@ def generate_rtm_excel():
     # Title Block
     ws1["A1"] = "CUSTOMER ACQUISITION COST (CAC) ANALYSIS — REQUIREMENTS TRACEABILITY MATRIX (RTM)"
     ws1["A1"].font = title_font
-    ws1["A2"] = "Baseline: Step 4 | Gourav Kumar (2500320140055), MCA 2nd Yr DA, ABES | Mentor: Prof. Alpna Lodhi"
+    ws1["A2"] = "Project ID: P083 | Gourav Kumar (2500320140055) | Batch: ABES_OND26_MCA 2nd Year_Data Analytics_Batch 01 | Mentor: Mr. Dinesh Sereno"
     ws1["A2"].font = subtitle_font
     ws1.row_dimensions[1].height = 25
     ws1.row_dimensions[2].height = 18

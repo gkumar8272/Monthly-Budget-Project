@@ -141,13 +141,15 @@ def generate_project_document():
 
     # Cover Table
     cover_data = [
+        ["Project ID", "P083"],
         ["Project Title", "Customer Acquisition Cost (CAC) & Marketing Unit Economics Analysis"],
         ["Student Name", "Gourav Kumar"],
         ["Roll Number", "2500320140055"],
+        ["Batch ID", "ABES_OND26_MCA 2nd Year_Data Analytics_Batch 01"],
         ["Academic Degree & Specialisation", "Master of Computer Applications (MCA) — Data Analytics"],
         ["Institution & Department", "ABES Engineering College, Ghaziabad | Department of Computer Applications"],
-        ["Faculty Project Mentor", "Prof. Alpna Lodhi, Assistant Professor"],
-        ["Document ID & Revision", "ABES-MCA-DA-2026-CAC-001 | Version 1.0 (Final Approved Baseline)"],
+        ["Faculty Project Mentor", "Mr. Dinesh Sereno, Assistant Professor"],
+        ["Document ID & Revision", "P083 | Version 1.0 (Final Approved Baseline)"],
         ["GitHub Repository URL", "https://github.com/gkumar8272/Monthly-Budget-Project"],
         ["Live Production Streamlit URL", "https://monthly-budget-project-hgcyxbnvwnvyx8g4ngpnax.streamlit.app/"],
         ["Project Delivery Date", "November 18, 2026"]

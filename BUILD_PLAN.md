@@ -1,8 +1,10 @@
 # BUILD PLAN: Customer Acquisition Cost (CAC) Analysis Platform
 
+**Project ID:** P083  
 **Project:** Customer Acquisition Cost (CAC) Analysis  
 **Author:** Gourav Kumar (Roll: 2500320140055) | MCA 2nd Year (Data Analytics), ABES Engineering College  
-**Faculty Mentor:** Prof. Alpna Lodhi  
+**Batch ID:** ABES_OND26_MCA 2nd Year_Data Analytics_Batch 01  
+**Faculty Mentor:** Mr. Dinesh Sereno  
 **Repository Working Directory:** `C:\Users\asus\Downloads\MERN-Expense-Tracker-main`  
 **Target Delivery:** Streamlit Community Cloud + ABES Academic Submission  
 

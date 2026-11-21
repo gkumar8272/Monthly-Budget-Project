@@ -69,17 +69,20 @@ def build_needs_analysis_doc():
 
     doc.add_paragraph().paragraph_format.space_after = Pt(6)
 
-    # Meta Table
-    meta_table = doc.add_table(rows=5, cols=2)
-    meta_table.alignment = WD_TABLE_ALIGNMENT.CENTER
-    set_table_borders(meta_table, "CBD5E1")
     meta = [
+        ("Project ID", "P083"),
         ("Candidate Name", "Gourav Kumar (Roll: 2500320140055)"),
+        ("Batch ID", "ABES_OND26_MCA 2nd Year_Data Analytics_Batch 01"),
         ("Academic Program", "MCA 2nd Year (Data Analytics), ABES Engineering College"),
-        ("Faculty Mentor", "Prof. Alpna Lodhi"),
-        ("Document Identifier", "DOC-STEP-03 | Business Requirements (BR) Specification"),
+        ("Faculty Mentor", "Mr. Dinesh Sereno"),
+        ("Document Identifier", "P083-DOC-STEP-03 | Business Requirements (BR) Specification"),
         ("Methodological Rule", "Technology-Agnostic: Defines WHAT the business needs, NOT HOW.")
     ]
+
+    # Meta Table
+    meta_table = doc.add_table(rows=len(meta), cols=2)
+    meta_table.alignment = WD_TABLE_ALIGNMENT.CENTER
+    set_table_borders(meta_table, "CBD5E1")
     for i, (k, v) in enumerate(meta):
         row = meta_table.rows[i]
         c0, c1 = row.cells[0], row.cells[1]

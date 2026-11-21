@@ -130,12 +130,14 @@ def build_docx():
     # Section 1: Document Control & Academic Metadata
     add_heading_1(doc, "1. Document Control & Academic Metadata")
     meta_data = [
+        ["Project ID", "P083"],
         ["Project Title", "Customer Acquisition Cost (CAC) & Marketing Unit Economics Analysis"],
         ["Candidate Name / Roll No", "Gourav Kumar | Roll No: 2500320140055"],
+        ["Batch ID", "ABES_OND26_MCA 2nd Year_Data Analytics_Batch 01"],
         ["Academic Program", "Master of Computer Applications (MCA) — 2nd Year Data Analytics"],
         ["Institution & Department", "ABES Engineering College, Ghaziabad | Department of Computer Applications"],
-        ["Project Mentor", "Prof. Alpna Lodhi, Assistant Professor (Project Guide)"],
-        ["Document Identifier", "DOC-CAC-ST16-DEPLOY-RUNBOOK-v1.0"],
+        ["Project Mentor", "Mr. Dinesh Sereno (Project Guide)"],
+        ["Document Identifier", "P083-DOC-ST16-DEPLOY-RUNBOOK-v1.0"],
         ["Target Production URL", "https://monthly-budget-project-hgcyxbnvwnvyx8g4ngpnax.streamlit.app/"],
         ["Release Date & Status", "November 18, 2026 | Verified for Production Cloud Deployment"]
     ]
@@ -285,7 +287,7 @@ def build_docx():
     t_sign = doc.add_table(rows=3, cols=3)
     sign_data = [
         ["Gourav Kumar", "MCA 2nd Year (DA) Student / Release Engineer", "DEPLOYMENT RUNBOOK VERIFIED"],
-        ["Prof. Alpna Lodhi", "Faculty Project Mentor, ABES EC", "REVIEWED & APPROVED FOR CLOUD HOSTING"]
+        ["Mr. Dinesh Sereno", "Faculty Project Mentor, ABES EC", "REVIEWED & APPROVED FOR CLOUD HOSTING"]
     ]
     style_table(t_sign, [2.2, 2.6, 1.7], ["Signatory Name", "Institutional Role", "Sign-Off Status"], sign_data)
 

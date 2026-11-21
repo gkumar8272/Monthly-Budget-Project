@@ -91,18 +91,21 @@ def build_trd_doc():
         r.font.color.rgb = RGBColor(0x25, 0x63, 0xEB)
         return h
 
-    # Metadata Table
-    meta_table = doc.add_table(rows=6, cols=2)
-    meta_table.alignment = WD_TABLE_ALIGNMENT.CENTER
-    set_table_borders(meta_table, "CBD5E1")
     meta = [
+        ("Project ID", "P083"),
         ("Candidate Name", "Gourav Kumar (Roll: 2500320140055)"),
+        ("Batch ID", "ABES_OND26_MCA 2nd Year_Data Analytics_Batch 01"),
         ("Academic Program", "MCA 2nd Year (Data Analytics), ABES Engineering College"),
-        ("Faculty Supervisor", "Prof. Alpna Lodhi"),
-        ("Document Identifier", "DOC-STEP-07 | Technical Requirements Document (TRD)"),
+        ("Faculty Supervisor", "Mr. Dinesh Sereno"),
+        ("Document Identifier", "P083-DOC-STEP-07 | Technical Requirements Document (TRD)"),
         ("Target Technology Stack", "Python 3.12, Pandas, NumPy, SciPy, Statsmodels, Plotly, Streamlit, SQLite, Tailwind CDN, Pytest"),
         ("Cloud Platform", "Streamlit Community Cloud (via GitHub repository continuous deployment)")
     ]
+
+    # Metadata Table
+    meta_table = doc.add_table(rows=len(meta), cols=2)
+    meta_table.alignment = WD_TABLE_ALIGNMENT.CENTER
+    set_table_borders(meta_table, "CBD5E1")
     for i, (k, v) in enumerate(meta):
         row = meta_table.rows[i]
         c0, c1 = row.cells[0], row.cells[1]

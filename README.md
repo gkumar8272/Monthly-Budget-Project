@@ -11,11 +11,13 @@
 ---
 
 ## 👨‍🎓 Project Metadata
+- **Project ID:** P083
 - **Candidate Name:** Gourav Kumar
 - **Roll Number:** 2500320140055
+- **Batch ID:** ABES_OND26_MCA 2nd Year_Data Analytics_Batch 01
 - **Degree:** Master of Computer Applications (MCA) — Data Analytics (2nd Year)
 - **Institution:** ABES Engineering College, Ghaziabad | Department of Computer Applications
-- **Faculty Mentor:** Prof. Alpna Lodhi (Assistant Professor)
+- **Faculty Mentor:** Mr. Dinesh Sereno
 - **Live Cloud Dashboard:** [https://monthly-budget-project-hgcyxbnvwnvyx8g4ngpnax.streamlit.app/](https://monthly-budget-project-hgcyxbnvwnvyx8g4ngpnax.streamlit.app/)
 - **GitHub Repository:** [https://github.com/gkumar8272/Monthly-Budget-Project](https://github.com/gkumar8272/Monthly-Budget-Project)
 

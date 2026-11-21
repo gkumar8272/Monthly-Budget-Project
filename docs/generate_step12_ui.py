@@ -146,7 +146,7 @@ def build_ui_framework_doc():
     wireframes = [
         ("UI-01: Executive Overview & KPI Cockpit",
 """+--------------------------------------------------------------------------------------------------------+
-| [LOGO] CUSTOMER ACQUISITION COST (CAC) COCKPIT | MCA Data Analytics | Gourav Kumar | Mentor: Alpna Lodhi|
+| [LOGO] CAC COCKPIT | P083 | Gourav Kumar (2500320140055) | Mentor: Mr. Dinesh Sereno | Batch: 01|
 +--------------------------------------------------------------------------------------------------------+
 | SIDEBAR FILTERS           | [TAILWIND HERO BANNER: Executive Unit Economics & Portfolio Health Summary] |
 | ------------------------- |                                                                            |

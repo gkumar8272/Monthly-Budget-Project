@@ -39,8 +39,9 @@ def render_header(title: str, subtitle: str, badge_text: str = "MCA DA Capstone"
                 </div>
                 <div class="hidden sm:flex flex-col items-end text-xs text-slate-400 border-l border-slate-700/60 pl-6">
                     <span class="font-semibold text-slate-200">Gourav Kumar (2500320140055)</span>
-                    <span>Mentor: Prof. Alpna Lodhi</span>
-                    <span class="text-blue-400">ABES Engineering College</span>
+                    <span class="text-blue-300 font-medium">Project ID: P083</span>
+                    <span>Mentor: Mr. Dinesh Sereno</span>
+                    <span class="text-slate-400 text-[10px]">Batch: ABES_OND26_MCA 2nd Year_Data Analytics_Batch 01</span>
                 </div>
             </div>
         </div>

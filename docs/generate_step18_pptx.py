@@ -136,7 +136,7 @@ def mk_base_slide(prs, with_header=True, with_footer=True):
         # Thin navy footer bar
         add_rect(slide, 0, 7.15, 13.33, 0.35, NAVY)
         add_textbox(slide, 0.3, 7.17, 8, 0.28,
-                    text="Gourav Kumar  |  Faculty Mentor: Prof. Alpna Lodhi  |  November 2026",
+                    text="Gourav Kumar (2500320140055)  |  Project ID: P083  |  Mentor: Mr. Dinesh Sereno  |  November 2026",
                     bold=False, size=8, colour=LIGHT,
                     align=PP_ALIGN.LEFT)
         add_textbox(slide, 11.0, 7.17, 2.1, 0.28,
@@ -195,20 +195,21 @@ def build_presentation():
 
     # Cover info table area
     info = [
+        ("Project ID",  "P083"),
         ("Candidate",   "Gourav Kumar"),
         ("Roll No",     "2500320140055"),
+        ("Batch ID",    "ABES_OND26_MCA 2nd Year_Data Analytics_Batch 01"),
         ("Degree",      "MCA — 2nd Year Data Analytics"),
-        ("Mentor",      "Prof. Alpna Lodhi"),
-        ("Document ID", "ABES-MCA-DA-2026-CAC-001"),
+        ("Mentor",      "Mr. Dinesh Sereno"),
         ("Date",        "November 18, 2026"),
     ]
-    y = 3.75
+    y = 3.65
     for label, value in info:
-        add_textbox(slide1, 3.3, y, 2.5, 0.32,
-                    text=label + ":", bold=True, size=10.5, colour=GOLD, align=PP_ALIGN.RIGHT)
-        add_textbox(slide1, 5.85, y, 4.5, 0.32,
-                    text=value, bold=False, size=10.5, colour=WHITE, align=PP_ALIGN.LEFT)
-        y += 0.33
+        add_textbox(slide1, 2.5, y, 3.3, 0.32,
+                    text=label + ":", bold=True, size=10.0, colour=GOLD, align=PP_ALIGN.RIGHT)
+        add_textbox(slide1, 5.9, y, 6.0, 0.32,
+                    text=value, bold=False, size=10.0, colour=WHITE, align=PP_ALIGN.LEFT)
+        y += 0.31
 
     add_textbox(slide1, 0.3, 6.65, 12.5, 0.3,
                 text="GitHub: https://github.com/gkumar8272/Monthly-Budget-Project  |  "
@@ -217,9 +218,9 @@ def build_presentation():
 
     slide1.notes_slide.notes_text_frame.text = (
         "Good morning / afternoon, respected panel. I am Gourav Kumar, Roll Number 2500320140055, "
-        "pursuing MCA in Data Analytics at ABES Engineering College. My project is titled "
-        "'Customer Acquisition Cost and Marketing Unit Economics Analysis'. "
-        "Under the guidance of Prof. Alpna Lodhi, I have designed and deployed an enterprise-grade "
+        "pursuing MCA in Data Analytics at ABES Engineering College, Project ID P083. "
+        "My project is titled 'Customer Acquisition Cost and Marketing Unit Economics Analysis'. "
+        "Under the guidance of Mr. Dinesh Sereno, I have designed and deployed an enterprise-grade "
         "Streamlit analytics platform hosted live on Streamlit Community Cloud. "
         "I will walk you through the full project lifecycle in the next five minutes."
     )
@@ -313,7 +314,7 @@ def build_presentation():
         "SH-03, the CFO, holds ultimate accountability for working capital solvency and scrutinises the 12-month payback ceiling. "
         "SH-04, the Marketing Data Analyst, executes the statistical analysis — specifically the ANOVA and Kruskal-Wallis tests — "
         "that give mathematical proof to channel performance claims. "
-        "Prof. Alpna Lodhi, our faculty guide, plays the role of compliance auditor ensuring academic rigor."
+        "Mr. Dinesh Sereno, our faculty guide, plays the role of compliance auditor ensuring academic rigor."
     )
 
     # ─────────────────────────────────────────────────────────────────────────
@@ -734,7 +735,7 @@ def build_presentation():
                 text="Thank you, Respected Panel  🙏",
                 bold=True, size=20, colour=GOLD, align=PP_ALIGN.CENTER)
     add_textbox(slide11, 2.0, 6.25, 9, 0.35,
-                text="Gourav Kumar  |  Roll: 2500320140055  |  Faculty Mentor: Prof. Alpna Lodhi  |  November 18, 2026",
+                text="Gourav Kumar  |  Roll: 2500320140055  |  Project ID: P083  |  Mentor: Mr. Dinesh Sereno  |  November 18, 2026",
                 bold=False, size=10, colour=LIGHT, align=PP_ALIGN.CENTER)
 
     slide11.notes_slide.notes_text_frame.text = (

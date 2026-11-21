@@ -212,7 +212,7 @@ def build_brd_doc():
     raci_table = doc.add_table(rows=7, cols=6)
     raci_table.alignment = WD_TABLE_ALIGNMENT.CENTER
     set_table_borders(raci_table, "CBD5E1")
-    raci_headers = ["Project Lifecycle Phase", "SH-01\n(Marketing)", "SH-02\n(Growth)", "SH-03\n(CFO/Finance)", "SH-04\n(Analyst/Gourav)", "SH-05\n(Mentor/Alpna)"]
+    raci_headers = ["Project Lifecycle Phase", "SH-01\n(Marketing)", "SH-02\n(Growth)", "SH-03\n(CFO/Finance)", "SH-04\n(Analyst/Gourav)", "SH-05\n(Mentor/Dinesh)"]
     raci_widths = [Inches(2.5), Inches(0.8), Inches(0.8), Inches(0.8), Inches(0.8), Inches(0.8)]
 
     for j, h in enumerate(raci_headers):
@@ -538,7 +538,7 @@ def build_brd_doc():
 
     so_data = [
         ("Gourav Kumar", "Lead Student Author / Developer", "APPROVED & BASELINED", "2026-11-18", "GK"),
-        ("Prof. Alpna Lodhi", "Academic Mentor / Project Supervisor", "APPROVED & BASELINED", "2026-11-18", "AL"),
+        ("Mr. Dinesh Sereno", "Academic Mentor / Project Supervisor", "APPROVED & BASELINED", "2026-11-18", "DS"),
         ("Department Project Committee", "ABES MCA Academic Review Board", "APPROVED FOR DESIGN", "2026-11-18", "ABES")
     ]
     for i, row in enumerate(so_data, start=1):

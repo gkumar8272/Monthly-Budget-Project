@@ -130,12 +130,14 @@ def build_docx():
     # Section 1: Document Control & Academic Metadata
     add_heading_1(doc, "1. Document Control & Academic Metadata")
     meta_data = [
+        ["Project ID", "P083"],
         ["Project Title", "Customer Acquisition Cost (CAC) & Marketing Unit Economics Analysis"],
         ["Candidate Name / Roll No", "Gourav Kumar | Roll No: 2500320140055"],
+        ["Batch ID", "ABES_OND26_MCA 2nd Year_Data Analytics_Batch 01"],
         ["Program & Semester", "Master of Computer Applications (MCA) — 2nd Year Data Analytics"],
         ["Institution & Department", "ABES Engineering College, Ghaziabad | Department of Computer Applications"],
-        ["Faculty Mentor", "Prof. Alpna Lodhi, Assistant Professor (Project Guide)"],
-        ["Document Identifier", "DOC-CAC-ST15-BUILD-VERIFICATION-v1.0"],
+        ["Faculty Mentor", "Mr. Dinesh Sereno (Project Guide)"],
+        ["Document Identifier", "P083-DOC-ST15-BUILD-VERIFICATION-v1.0"],
         ["Release Date & Build State", "November 18, 2026 | Build Complete & All 14 Pytest Test Cases Passed (100%)"]
     ]
     t_meta = doc.add_table(rows=len(meta_data)+1, cols=2)
@@ -292,7 +294,7 @@ def build_docx():
     t_sign = doc.add_table(rows=3, cols=3)
     sign_data = [
         ["Gourav Kumar", "MCA 2nd Year (DA) Student / Developer", "ACCEPTED & COMPLETE"],
-        ["Prof. Alpna Lodhi", "Faculty Project Mentor, ABES EC", "REVIEWED & VERIFIED"]
+        ["Mr. Dinesh Sereno", "Faculty Project Mentor, ABES EC", "REVIEWED & VERIFIED"]
     ]
     style_table(t_sign, [2.2, 2.6, 1.7], ["Signatory Name", "Institutional Role", "Build Verification Status"], sign_data)
 
